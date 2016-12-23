@@ -21,9 +21,7 @@
                 <version>0.1.1-SNAPSHOT</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <strategy hint="file">
-                        <versionFilePath>${basedir}/my-new-version.txt</versionFilePath>
-                    </strategy>
+                    <strategy hint="file"/>
                 </configuration>
             </plugin>
             <plugin>
@@ -37,7 +35,7 @@
                         <configuration>
                             <target>
                                 <mkdir dir="${project.build.directory}/copy"/>
-                                <copy todir="${project.build.directory}/copy" file="${project.build.directory}/${project.artifactId}-${project.version}.jar" />
+                                <copy todir="${project.build.directory}/copy" file="${project.build.directory}/${project.artifactId}-${project.version}.jar"/>
                             </target>
                         </configuration>
                         <goals>
